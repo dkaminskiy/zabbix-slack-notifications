@@ -1,5 +1,6 @@
 # zabbix-slack-notifications
 Notify alarms from Zabbix 4.x to Slack (previous versions not tested). The script `slack.sh` is based on [Zabbix Slack AlertScript](https://github.com/ericoc/zabbix-slack-alertscript), but almost completely rewritten.
+
 Recovery, acknowledgements and updates from Zabbix will be attached as replies to [Slack message thread](https://slackhq.com/threaded-messaging-comes-to-slack). Recovery message from Zabbix will update initial problem message.
 
 Installation
