@@ -1,0 +1,32 @@
+Default subject:
+
+UPDATED {EVENT.ID}
+
+
+Default message:
+
+{
+    "fallback": "Current problem status is {EVENT.STATUS}, acknowledged: {EVENT.ACK.STATUS}.",
+    "color": "warning",
+    "pretext": "UPDATED",
+    "author_name": "EventID: {EVENT.ID}",
+    "text": "{USER.FULLNAME} {EVENT.UPDATE.ACTION} problem at {EVENT.UPDATE.DATE} {EVENT.UPDATE.TIME}",
+    "fields": [
+        {
+            "title": "Update message",
+            "value": "{EVENT.UPDATE.MESSAGE}",
+            "short": false
+        },
+        {
+            "title": "Status",
+            "value": "{EVENT.STATUS}",
+            "short": true
+        },
+        {
+            "title": "Acknowledged",
+            "value": "{EVENT.ACK.STATUS}",
+            "short": true
+        }
+    ]
+}
+

@@ -1,0 +1,38 @@
+Default subject:
+RESOLVED {EVENT.ID}
+
+Default message:
+
+{
+    "fallback": "{HOST.NAME}:{TRIGGER.NAME}:{STATUS}",
+    "color": "good",
+    "pretext": "RESOLVED",
+    "author_name": "{HOST.NAME}",
+    "author_link": "ssh://{HOST.NAME}",
+    "title": "{TRIGGER.NAME}",
+    "title_link": "https://zabbix-server.company.com/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}",
+    "text": "{ITEM.NAME1}: {ITEM.VALUE1}",
+    "fields": [
+        {
+            "title": "Status",
+            "value": "{STATUS}",
+            "short": true
+        },
+        {
+            "title": "Severity",
+            "value": "{TRIGGER.SEVERITY}",
+            "short": true
+        },
+        {
+            "title": "Time",
+            "value": "{EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME}",
+            "short": true
+        },
+        {
+            "title": "EventID",
+            "value": "{EVENT.ID}",
+            "short": true
+        }
+    ]
+}
+
