@@ -22,7 +22,7 @@ It also uses [`jq`](https://stedolan.github.io/jq/), so make shure that `jq` is 
 
 ## Slack Setup
 
-The [Bots app](https://slack.com/apps/A0F7YS25R-bots) or other applocation  must be installed to use it API Token.
+Install [Bots app](https://slack.com/apps/A0F7YS25R-bots) or (prefered) [create applocation](https://api.slack.com/slack-apps) to use it API Token.
 Make sure that you specify your correct Slack.com API Token (it starts witn `xoxp-` for application or `xoxb-` for bot) and edit the sender user name and icon at the top of the script:
 
     # Slack Authentication token and user name
